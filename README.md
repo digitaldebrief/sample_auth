@@ -1,4 +1,3 @@
-test test test 
 # sample_auth Flask Application
 
 Awesome sample_auth created by digitaldebrief
