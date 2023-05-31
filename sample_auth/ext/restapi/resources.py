@@ -18,7 +18,7 @@ class ProductResource(Resource):
         Creates a new product.
 
         Only admin user authenticated using basic auth can post
-        Basic takes base64 encripted username:password.
+        Basic takes base64 encoded username:password.
 
         # curl -XPOST localhost:5000/api/v1/product/ \
         #  -H "Authorization: Basic Y2h1Y2s6bm9ycmlz" \
