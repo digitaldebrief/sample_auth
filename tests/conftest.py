@@ -2,6 +2,7 @@ import sys
 import pytest
 
 from sample_auth import create_app
+from sample_auth.ext.auth import create_user, delete_user
 from sample_auth.ext.commands import populate_db
 from sample_auth.ext.database import db
 
@@ -19,6 +20,14 @@ def app():
 def products(app):
     with app.app_context():
         return populate_db()
+
+
+@pytest.fixture(scope="session")
+def admin_user(app):
+    with app.app_context():
+        admin_user = create_user(username="admin", password="asdf")
+        yield admin_user
+        delete_user(admin_user.username)
 
 
 # each test runs on cwd to its temp dir

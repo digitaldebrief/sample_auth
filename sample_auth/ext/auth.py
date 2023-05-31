@@ -29,5 +29,13 @@ def create_user(username, password):
     return user
 
 
+def delete_user(username):
+    """Deletes user"""
+    if not User.query.filter_by(username=username).first():
+        raise RuntimeError(f"{username} does not exist")
+    User.query.filter_by(username=username).delete()
+    db.session.commit()
+
+
 def init_app(app):
     SimpleLogin(app, login_checker=verify_login)

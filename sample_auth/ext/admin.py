@@ -18,7 +18,9 @@ class UserAdmin(sqla.ModelView):
     can_edit = False
 
     def on_model_change(self, form, model, is_created):
-        model.pwhash = generate_password_hash(model.pwhash) # Note that the user input is not hashed, despite the name.
+        model.pwhash = generate_password_hash(
+            model.pwhash
+        )  # Note that the user input is not hashed, despite the name.
 
 
 def init_app(app):
