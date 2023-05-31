@@ -1,6 +1,6 @@
 # sample_auth Flask Application
 
-Awesome sample_auth created by digitaldebrief
+sample_auth - created by digitaldebrief
 
 ## Installation
 
