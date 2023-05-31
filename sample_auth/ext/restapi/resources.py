@@ -21,8 +21,9 @@ class ProductResource(Resource):
         Basic takes base64 encoded username:password.
 
         # curl -XPOST localhost:5000/api/v1/product/ \
-        #  -H "Authorization: Basic Y2h1Y2s6bm9ycmlz" \
+        #  -H "Authorization: Basic YWRtaW46MTIzNAo" \
         #  -H "Content-Type: application/json"
+        #  -d "{'name':'my_awesome_product', 'price':5, 'description':'Mindblowing awesomeness'}"
         """
         return NotImplementedError(
             "Someone please complete this example and send a PR :)"
