@@ -11,7 +11,7 @@ def index():
 
 def product(product_id):
     product = Product.query.filter_by(id=product_id).first() or abort(
-        404, "produto nao encontrado"
+        404, "Product not found"
     )
     return render_template("product.html", product=product)
 

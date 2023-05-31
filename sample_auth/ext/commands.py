@@ -21,7 +21,7 @@ def populate_db():
         Product(
             id=1, name="Ciabatta", price="10", description="Italian Bread"
         ),
-        Product(id=2, name="Baguete", price="15", description="French Bread"),
+        Product(id=2, name="Baguette", price="15", description="French Bread"),
         Product(id=3, name="Pretzel", price="20", description="German Bread"),
     ]
     db.session.bulk_save_objects(data)

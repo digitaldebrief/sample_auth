@@ -41,7 +41,7 @@ To see the help message and usage instructions.
 ```bash
 sample_auth create-db   # run once
 sample_auth populate-db  # run once (optional)
-sample_auth add-user -u admin -p 1234  # ads a user
+sample_auth add-user -u admin -p 1234  # adds a user
 sample_auth run
 ```
 
