@@ -1,17 +1,7 @@
-# Welcome to MkDocs
+# Welcome to Sample Auth
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+The documentation as it stands right now is mostly a proof of concept more than something that is actually useful. It exists to practice generation and hosting.
 
-## Commands
+If you are interested in starting your own project, check out the steps in [getting started](getting_started.md).
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+If you are interested in updating and hosting documentation, look at [making docs](making_docs.md).
