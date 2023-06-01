@@ -19,6 +19,26 @@ def test_products_get_all(client, products):  # Arrange
         assert product.price in [Decimal(item["price"]) for item in data]
 
 
+def test_post_new_product(client):  # Arrange
+    """Post a new product"""
+    # Act
+    response = client.post(
+        "/api/v1/product/",
+        json={
+            "name": "Rye",
+            "price": 5,
+            "description": "This bread has a grain with strong flavor",
+        },
+    )
+    # Assert
+    assert response.status_code == 200
+    data = response.json
+    assert data["name"] == "Rye"
+    assert Decimal(data["price"]) == 5
+    assert data["description"] == "This bread has a grain with strong flavor"
+    assert data["id"]
+
+
 def test_products_get_one(client, products):  # Arrange
     """Test get one product"""
     for product in products:
