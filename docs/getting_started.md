@@ -6,6 +6,7 @@ This is an outline of documentation that needs to be written.
 * Deploy a production version of the application
 
 Submitting a patch
+
 * Open an issue
 * Write a failing test
 * Make the fix
@@ -13,6 +14,7 @@ Submitting a patch
 * Submit upstream
 
 How was this application developed?
+
 * This application was generated from a template
 * How to generate a new application from the same template
     * Set up services for a new application, including codecov and ci
