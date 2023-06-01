@@ -1,10 +1,12 @@
-# sample_auth Flask Application
-
-sample_auth - created by digitaldebrief
+# Sample Auth
 
 [![codecov](https://codecov.io/gh/digitaldebrief/sample_auth/branch/main/graph/badge.svg?token=EPA1HFLD38)](https://codecov.io/gh/digitaldebrief/sample_auth)
-![Build passing](https://github.com/digitaldebrief/sample_auth/actions/workflows/main.yml/badge.svg)
+[![CI](https://github.com/digitaldebrief/sample_auth/actions/workflows/main.yml/badge.svg)](https://github.com/digitaldebrief/sample_auth/actions/workflows/main.yml)
 
+
+This application is not ready for other people to use. Feel free to contribute, but please don't ask for user support (yet).
+
+The goal of this project is to provide a functional outline for identity and permissions that people can clone for their own applications.
 
 ## Installation
 
