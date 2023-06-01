@@ -1,3 +1,3 @@
-from sample_auth import create_app_wsgi
+from sample_auth import create_app
 
-app = application = create_app_wsgi()  # noqa
+app = application = create_app()  # noqa

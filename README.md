@@ -1,7 +1,10 @@
-
 # sample_auth Flask Application
 
-Awesome sample_auth created by digitaldebrief
+sample_auth - created by digitaldebrief
+
+[![codecov](https://codecov.io/gh/digitaldebrief/sample_auth/branch/main/graph/badge.svg?token=EPA1HFLD38)](https://codecov.io/gh/digitaldebrief/sample_auth)
+![Build passing](https://github.com/digitaldebrief/sample_auth/actions/workflows/main.yml/badge.svg)
+
 
 ## Installation
 
@@ -42,7 +45,7 @@ To see the help message and usage instructions.
 ```bash
 sample_auth create-db   # run once
 sample_auth populate-db  # run once (optional)
-sample_auth add-user -u admin -p 1234  # ads a user
+sample_auth add-user -u admin -p 1234  # adds a user
 sample_auth run
 ```
 
