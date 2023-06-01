@@ -1,5 +1,4 @@
 from sample_auth.ext.auth import create_user, delete_user, verify_login
-from sample_auth.models import User
 
 
 def test_dynaconf_is_on_testing_env(app):
